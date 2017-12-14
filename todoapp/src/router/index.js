@@ -1,0 +1,22 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+// import HelloWorld from '@/components/HelloWorld'
+import TodoList from '@/components/ToDoList'
+
+console.log(typeof Router)
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    // {
+    //   path: '/helloworld',
+    //   name: 'HelloWorld',
+    //   component: HelloWorld
+    // },
+    {
+      path: '/',
+      name: 'todolist',
+      component: TodoList
+    }
+  ]
+})
